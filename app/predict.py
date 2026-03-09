@@ -51,7 +51,8 @@ def main():
     fpath = os.path.join(in_folder, fname)
     print("fpath:", fpath)
     assert os.path.exists(fpath)
-    model_path = info["model_path"]
+    model_name = info["model_name"]
+    model_path = os.path.join("/models", model_name)
     print("model_path: (data)", model_path)
     assert os.path.exists(model_path)
 
