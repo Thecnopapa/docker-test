@@ -8,6 +8,6 @@
 		       	"."
 		]
 	],
-	"LogsBucket": "build_logs"
+	"logsBucket": "build_logs"
 	
 }
