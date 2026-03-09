@@ -8,7 +8,6 @@
 		       	"."
 		]
 	],
-	"BuildOptions": [
-		"LogsBucket": "build_logs"
-	]
+	"LogsBucket": "build_logs"
+	
 }
