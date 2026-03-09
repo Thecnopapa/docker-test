@@ -1,0 +1,12 @@
+{
+	"steps": [
+		"name": "testbuild",
+		"args": [
+			"build",
+		       	"-t",
+		       	"testbuild",
+		       	"."
+		]
+	],
+	"DefaultLogsBucketBehavior": "REGIONAL_USER_OWNED_BUCKET"
+}

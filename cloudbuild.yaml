@@ -5,7 +5,7 @@ steps:
     - -t 
     - docker-test:manual 
     - .
-options:
+- options:
   - logging: CLOUD_LOGGING_ONLY
 
   
