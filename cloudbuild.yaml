@@ -2,7 +2,7 @@
 steps:
   - name: "docker-test:manual"
     args: ["build", "-t", "docker-test:manual", "."]
-    timeout: 15m
+  - timeout: 15m
 options:
   - logging: CLOUD_LOGGING_ONLY
 
