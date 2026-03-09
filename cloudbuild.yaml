@@ -1,2 +1,9 @@
-options:
-  logging: CLOUD_LOGGING_ONLY
+
+steps:
+  - name: "$REPO_NAME:$COMMIT_SHA"
+    args: ["build", "-t", "$REPO_NAME:$COMMIT_SHA", "."]
+
+  options:
+    logging: CLOUD_LOGGING_ONLY
+
+  
