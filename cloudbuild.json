@@ -9,6 +9,6 @@
 		]
 	],
 	"BuildOptions": [
-		"DefaultLogsBucketBehavior": "REGIONAL_USER_OWNED_BUCKET"
+		"LogsBucket": "build_logs"
 	]
 }
