@@ -5,14 +5,14 @@
             "args": [
                 "build",
                 "-t",
-                "testbuild",
+                "europe-west1-docker.pkg.dev/iainvisa/images/predictimg",
                 "."
             ]
         }
     ],
     "serviceAccount": "predict@iainvisa.iam.gserviceaccount.com",
     "images": [
-        "europe-west1-docker.pkg.dev/iainvisa/images/predictimg/"
+    
     ],
     "substitutions": {},
     "options": {
