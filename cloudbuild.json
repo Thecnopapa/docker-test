@@ -10,6 +10,5 @@
 			]
 		}
 	],
-	"logsBucket": "build_logs"
-	
+	"logging": "CLOUD_LOGGING_ONLY"
 }
