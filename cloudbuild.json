@@ -8,5 +8,7 @@
 		       	"."
 		]
 	],
-	"DefaultLogsBucketBehavior": "REGIONAL_USER_OWNED_BUCKET"
+	"BuildOptions": [
+		"DefaultLogsBucketBehavior": "REGIONAL_USER_OWNED_BUCKET"
+	]
 }
