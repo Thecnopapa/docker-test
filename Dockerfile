@@ -27,8 +27,11 @@ RUN pip3 install -r requirements.txt
 
 
 COPY ./app .
+COPY ./tools/foldseek .
 
+RUN chmod +x ./foldseek
 RUN chmod +x ./run.sh
+
 
 
 CMD ["./run.sh"]
