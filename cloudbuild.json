@@ -1,12 +1,14 @@
 {
 	"steps": [
-		"name":, "gcr.io/cloud-builders/docker",
-		"args":	[
-			"build",
-			"-t",
-			"testbuild",
-			"."
-		],
+		{
+			"name": "gcr.io/cloud-builders/docker",
+			"args": [
+				"build",
+				"-t",
+				"testbuild",
+				"."
+			]
+		}
 	],
 	"logsBucket": "build_logs"
 	
