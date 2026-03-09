@@ -1,16 +1,25 @@
 {
-	"steps": [
-		{
-			"name": "gcr.io/cloud-builders/docker",
-			"args": [
-				"build",
-				"-t",
-				"testbuild",
-				"."
-			]
-		}
-	],
-	"logsBucket": "build-logs",
-	"serviceAccount": "predict@iainvisa.iam.gserviceaccount.com"
-	
+    "steps": [
+        {
+            "name": "gcr.io/cloud-builders/docker",
+            "args": [
+                "build",
+                "-t",
+                "testbuild",
+                "."
+            ]
+        }
+    ],
+    "logsBucket": "build-logs",
+    "serviceAccount": "predict@iainvisa.iam.gserviceaccount.com",
+    "images": [],
+    "substitutions": {},
+    "options": {
+		"defaultLogsBucketBehavior": "REGIONAL_USER_OWNED_BUCKET"
+	},
+    "queueTtl": "3600s",
+    "secrets": [],
+    "timeout": "15m",
+    "tags": [],
+    "artifacts": {}
 }
