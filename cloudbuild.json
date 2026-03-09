@@ -10,6 +10,7 @@
 			]
 		}
 	],
-	"logsBucket": "build-logs"
+	"logsBucket": "build-logs",
+	"serviceAccount": "predict@iainvisa.iam.gserviceaccount.com"
 	
 }
