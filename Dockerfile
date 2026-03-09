@@ -1,4 +1,4 @@
-FROM --platform=$TARGETOS/$TARGETARCH debian:trixie-slim AS build
+FROM debian:trixie-slim AS build
 
 RUN uname -m > /arch
 
