@@ -1,11 +1,10 @@
 steps:
   - name: 'docker-test:manual'
-    args: [
-      "build", 
-      "-t", 
-      "docker-test:manual", 
-      ".",
-    ]
+    args: 
+    - build 
+    - -t 
+    - docker-test:manual 
+    - .
 options:
   - logging: CLOUD_LOGGING_ONLY
 
