@@ -3,7 +3,6 @@ steps:
   - name: "$REPO_NAME:$COMMIT_SHA"
     args: ["build", "-t", "$REPO_NAME:$COMMIT_SHA", "."]
     timeout: 15m
-
 options:
   - logging: CLOUD_LOGGING_ONLY
 
