@@ -9,10 +9,12 @@ COPY ./requirements.txt .
 
 RUN apt-get update && apt-get install -y python3 python3-pip python3.13-venv
 
+RUN apt-get clean
+
 RUN python3 -m venv venv
 
 ENV VIRTUAL_ENV="./venv"
-ENV PATH="./venv/bin:$PATH"               
+ENV PATH="./venv/bin:$PATH"
 RUN which python
 
 
