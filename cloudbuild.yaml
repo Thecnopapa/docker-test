@@ -1,6 +1,6 @@
 
 steps:
-  - name: "$REPO_NAME:$COMMIT_SHA"
+  - name: "docker-test:manual"
     args: ["build", "-t", "$REPO_NAME:$COMMIT_SHA", "."]
     timeout: 15m
 options:
