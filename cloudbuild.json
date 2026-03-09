@@ -1,7 +1,6 @@
 {
-	"name": "gcr.io/testbuild",
 	"steps": [
-		"name": "gcr.io/testbuild",
+		"name": "debian",
 		"args":	[
 			"build",
 			"-t",
