@@ -10,5 +10,6 @@
 			]
 		}
 	],
-	"logging": "CLOUD_LOGGING_ONLY"
+	"logsBucket": "_Default"
+	
 }
