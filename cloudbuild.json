@@ -1,13 +1,13 @@
 {
-	"name": "testbuild",
+	"name": "gcr.io/testbuild",
 	"steps": [
-		"name": "testbuild",
-		"args": [
+		"name": "gcr.io/testbuild",
+		"args":	[
 			"build",
-		       	"-t",
-		       	"testbuild",
-		       	"."
-		]
+			"-t",
+			"testbuild",
+			"."
+		],
 	],
 	"logsBucket": "build_logs"
 	
