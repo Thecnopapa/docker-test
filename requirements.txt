@@ -1,1 +1,3 @@
-bioiain
+tensorboard
+transformers
+unidecode
