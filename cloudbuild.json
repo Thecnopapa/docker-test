@@ -11,7 +11,9 @@
         }
     ],
     "serviceAccount": "predict@iainvisa.iam.gserviceaccount.com",
-    "images": [],
+    "images": [
+        "europe-west1-docker.pkg.dev/iainvisa/images/testbuild"
+    ],
     "substitutions": {},
     "options": {
 		"defaultLogsBucketBehavior": "REGIONAL_USER_OWNED_BUCKET"
