@@ -1,4 +1,5 @@
 {
+	"name": "testbuild",
 	"steps": [
 		"name": "testbuild",
 		"args": [
