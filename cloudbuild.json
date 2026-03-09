@@ -8,6 +8,13 @@
                 "europe-west1-docker.pkg.dev/iainvisa/images/predictimg",
                 "."
             ]
+        },
+        {
+            "name": "gcr.io/cloud-builders/docker",
+            "args": [
+               "push",
+               "europe-west1-docker.pkg.dev/iainvisa/images/predictimg"
+             ]
         }
     ],
     "serviceAccount": "predict@iainvisa.iam.gserviceaccount.com",
