@@ -10,6 +10,6 @@
 			]
 		}
 	],
-	"logsBucket": "_Default"
+	"logsBucket": "build-logs"
 	
 }
