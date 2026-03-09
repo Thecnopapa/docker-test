@@ -10,7 +10,6 @@
             ]
         }
     ],
-    "logsBucket": "build-logs",
     "serviceAccount": "predict@iainvisa.iam.gserviceaccount.com",
     "images": [],
     "substitutions": {},
@@ -19,7 +18,7 @@
 	},
     "queueTtl": "3600s",
     "secrets": [],
-    "timeout": "15m",
+    "timeout": "600s",
     "tags": [],
     "artifacts": {}
 }
