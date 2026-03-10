@@ -22,7 +22,7 @@ print(" * JOBID:", JOBID)
 def main():
     print(f" * Starting Job {JOBID} ...")
 
-    in_folder = f"/predictions/in/{JOBID}"
+    in_folder = f"/predictions/{JOBID}/in"
     if not os.path.exists(in_folder):
         print("in_folder does not exist")
         return False
@@ -35,7 +35,7 @@ def main():
     info["in_folder"] = in_folder
 
 
-    out_folder = f"/predictions/out/{JOBID}"
+    out_folder = f"/predictions/{JOBID}/out"
     os.makedirs(out_folder, exist_ok=True)
     info["out_folder"] = out_folder
 
