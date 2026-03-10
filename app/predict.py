@@ -25,7 +25,7 @@ def main():
     except FileNotFoundError:
         print("job_info.json does not exist")
         return False
- 
+
     info["in_folder"] = in_folder
 
 
@@ -58,7 +58,9 @@ def main():
 
 
     try:
-        job_info = predict(file_path=fpath, model_data_path=model_path, chain_id=chain, pred_folder=out_folder, use_temp=False, force=True, timestamp=JOBID, with_foldseek=False, foldseek_cmd="./foldseek", download_folder="/misc/predict/.models")
+        job_info = predict(file_path=fpath, model_data_path=model_path, chain_id=chain, pred_folder=out_folder,
+                           use_temp=False, force=True, timestamp=JOBID, with_foldseek=True,
+                           foldseek_cmd="./foldseek", download_folder="/misc/predict/.models")
     except Exception as e:
         info["status"] = "failed"
         info["error"] = str(e)
