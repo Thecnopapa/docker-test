@@ -16,7 +16,7 @@ def main():
     in_folder = f"/predictions/{JOBID}/in"
     in_info_file = os.path.join(in_folder, "job_info.json")
     print("in_folder:", in_folder)
-    print("in_info_file": in_info_file)
+    print("in_info_file:", in_info_file)
     if not os.path.exists(in_folder):
         print("in_folder does not exist")
         return False
