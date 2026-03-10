@@ -65,7 +65,7 @@ def main():
         json.dump(info, open(info_file, "w"))
         return False
 
-    session = job_info.pop("session", None)
+    script = job_info.pop("script", None)
     info = info | job_info
     info["status"] = "ok"
     print(info)
