@@ -33,6 +33,6 @@ RUN chmod +x ./foldseek
 RUN chmod +x ./run.sh
 
 
-
+RUN echo "executing: run.sh ..."
 CMD ["./run.sh"]
 
