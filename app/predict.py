@@ -36,7 +36,7 @@ def main():
     info["out_folder"] = out_folder
 
     info_file = os.path.join(out_folder, "job_info.json")
-    print("out_info_file": info_file)
+    print("out_info_file:", info_file)
     info["info_file"] = info_file
 
     info ["status"] = "running"
