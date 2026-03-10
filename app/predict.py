@@ -6,40 +6,37 @@ import sys, os, datetime, json, shutil, stat
 from bioiain.machine.flows import predict
 
 
-print(" * Copying FoldSeek...")
-fs_path = "./tools/foldseek"
-os.makedirs("./tools", exist_ok=True)
-shutil.copy('/misc/foldseek', fs_path)
-
-os.chmod(fs_path, stat.S_IRWXU )
-print(" * Foldseek bin:", fs_path)
-assert os.path.exists(fs_path)
-
 
 JOBID = os.environ.get("JOBID", None)
 print(" * JOBID:", JOBID)
 
 def main():
-    print(f" * Starting Job {JOBID} ...")
+    print(f" * Starting Job: {JOBID} ...")
 
     in_folder = f"/predictions/{JOBID}/in"
+    in_info_file = os.path.join(in_folder, "job_info.json")
+    print("in_folder:", in_folder)
+    print("in_info_file": in_info_file)
     if not os.path.exists(in_folder):
         print("in_folder does not exist")
         return False
     try:
-        info = json.load(open(f"{in_folder}/job_details.json", "r"))
+        info = json.load(open(in_info_file, "r"))
     except FileNotFoundError:
-        print("job_details.json does not exist")
+        print("job_info.json does not exist")
         return False
-
+ 
     info["in_folder"] = in_folder
 
 
     out_folder = f"/predictions/{JOBID}/out"
+
+    print("out_folder:", out_folder)
     os.makedirs(out_folder, exist_ok=True)
     info["out_folder"] = out_folder
 
-    info_file = os.path.join(out_folder, "job_details.json")
+    info_file = os.path.join(out_folder, "job_info.json")
+    print("out_info_file": info_file)
     info["info_file"] = info_file
 
     info ["status"] = "running"
