@@ -60,7 +60,7 @@ def main():
     try:
         job_info = predict(file_path=fpath, model_data_path=model_path, chain_id=chain, pred_folder=out_folder,
                            use_temp=False, force=True, timestamp=JOBID, with_foldseek=True,
-                           foldseek_cmd="./foldseek", download_folder="/misc/predict/.models")
+                           foldseek_cmd="./tools/foldseek", download_folder="/misc/predict/.models")
     except Exception as e:
         print(e)
         raise e #debug
