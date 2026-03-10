@@ -62,6 +62,8 @@ def main():
                            use_temp=False, force=True, timestamp=JOBID, with_foldseek=True,
                            foldseek_cmd="./foldseek", download_folder="/misc/predict/.models")
     except Exception as e:
+        print(e)
+        raise e #debug
         info["status"] = "failed"
         info["error"] = str(e)
         json.dump(info, open(info_file, "w"))
