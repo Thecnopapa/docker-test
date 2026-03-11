@@ -42,7 +42,7 @@ def main():
     info ["status"] = "running"
     info["job_id"] = JOBID
 
-    json.dump(info, open(info_file, "w"))
+    json.dump(info, open(info_file, "w"), indent=4)
 
     fname = info["fname"]
     fpath = os.path.join(in_folder, fname)
@@ -63,7 +63,6 @@ def main():
                            foldseek_cmd="./tools/foldseek", download_folder="/misc/predict/.models")
     except Exception as e:
         print(e)
-        raise e #debug
         info["status"] = "failed"
         info["error"] = str(e)
         json.dump(info, open(info_file, "w"))
@@ -73,7 +72,7 @@ def main():
     info = info | job_info
     info["status"] = "ok"
     print(info)
-    json.dump(info, open(info_file, "w"))
+    json.dump(info, open(info_file, "w"), indent=4)
 
     print(f"Job {JOBID} completed!")
     return True
